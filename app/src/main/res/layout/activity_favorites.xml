@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".FavoritesActivity"
     android:orientation="vertical"
-    android:background="#F4F4F4"
-    >
+    android:background="#F4F4F4">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +15,7 @@
         android:background="#0077D6"
         >
         <Button
-            android:id="@+id/Favorites_intent2"
+            android:id="@+id/Favorites_intent"
             android:layout_width="206dp"
             android:layout_height="match_parent"
             android:background="#0077D6"
@@ -24,9 +23,9 @@
             android:textColor="#ffffff"
             android:textSize="15dp"
             android:layout_gravity="center"
-        />
+            />
         <Button
-            android:id="@+id/All_Contacts_intent2"
+            android:id="@+id/All_Contacts_intent"
             android:layout_width="206dp"
             android:layout_height="match_parent"
             android:background="#0077D6"
@@ -45,16 +44,14 @@
         <TextView
             android:layout_width="206dp"
             android:layout_height="3dp"
-            android:background="#071147"
+            android:background="#C8D0FF"
             />
         <TextView
             android:layout_width="206dp"
             android:layout_height="3dp"
-            android:background="#C8D0FF"
+            android:background="#071147"
+
             />
     </LinearLayout>
-
-
-
 
 </LinearLayout>
