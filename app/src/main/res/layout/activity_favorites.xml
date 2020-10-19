@@ -12,23 +12,23 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="#0077D6"
+        android:background="@color/colorPrimary"
         >
         <Button
-            android:id="@+id/Favorites_intent"
+            android:id="@+id/Favorites_intent2"
             android:layout_width="206dp"
             android:layout_height="match_parent"
-            android:background="#0077D6"
+            android:background="@color/colorPrimary"
             android:text="FAVORITES"
             android:textColor="#ffffff"
             android:textSize="15dp"
             android:layout_gravity="center"
             />
         <Button
-            android:id="@+id/All_Contacts_intent"
+            android:id="@+id/All_Contacts_intent2"
             android:layout_width="206dp"
             android:layout_height="match_parent"
-            android:background="#0077D6"
+            android:background="@color/colorPrimary"
             android:text="ALL CONTACTS"
             android:textColor="#ffffff"
             android:textSize="15dp"
@@ -53,5 +53,18 @@
 
             />
     </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addview_container2"
+            android:orientation="vertical"
+            android:background="#E1E6EA"/>
+
+    </ScrollView>
 
 </LinearLayout>
