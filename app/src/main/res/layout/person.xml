@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="100dp"
     android:padding="6dp">
 
     <LinearLayout
@@ -40,15 +40,11 @@
                 android:textColor="#343959"/>
 
         </LinearLayout>
-        <ImageView
-            android:layout_width="73dp"
-            android:layout_height="83dp"
-            android:src="@drawable/star"/>
-
-
-
-
-
+        <Button
+            android:id="@+id/star"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/star"/>
 
     </LinearLayout>
     <LinearLayout
