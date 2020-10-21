@@ -53,20 +53,10 @@
             android:background="#C8D0FF"
             />
     </LinearLayout>
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/addview_container"
-            android:orientation="vertical"
-            android:background="#E1E6EA"/>
-
-    </ScrollView>
-
+        android:id="@+id/recycler_view"/>
 
 
 </LinearLayout>

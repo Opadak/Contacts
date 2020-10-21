@@ -4,10 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_favorites.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.person.*
@@ -35,33 +38,42 @@ class MainActivity : AppCompatActivity() {
 
         }//personlist에 넣는거
 
-        val container = findViewById<LinearLayout>(R.id.addview_container)
-        // container이라는 변수에 activity_main에 종속된 LinearLayout에 있는 addview_container을 넣는다.
-        val inflater = LayoutInflater.from(this)
-        // inflater = View를 그려준다. 이 곳의 Layout의 View를 그려준다.
-
-        for (i in 0 until personlist.size){
-            val itemview = inflater.inflate(R.layout.person,null)
-           val personName =  itemview.findViewById<TextView>(R.id.person_name)
-            val phoneNum = itemview.findViewById<TextView>(R.id.dinalNum)
-
-
-
-            personName.setText(personlist.get(i).name)
-            phoneNum.setText(personlist.get(i).phone_num)
-            container.addView(itemview)
-
-
-
-        }
-
-
-
-
 
 
     }
 }
+class Adapter(
+    val itemList : ArrayList<Person>,
+    val inflater: LayoutInflater
+) :RecyclerView.Adapter<Adapter.ViewHolder>( ){
+    class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
+        val name2 :TextView
+        val phone_num2 : TextView
+        init {
+            name2 = itemView.findViewById()
+        }
+    }
+
+
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ??? {
+
+    }
+
+    override fun getItemCount(): Int {
+
+    }
+
+    override fun onBindViewHolder(holder: ???, position: Int) {
+
+    }
+
+
+}
+
+
+
+
 
 class Person(val name: String, val phone_num:String){
 
