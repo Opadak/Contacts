@@ -42,29 +42,33 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
-class Adapter(
+class RecyclerViewAdapter(
     val itemList : ArrayList<Person>,
     val inflater: LayoutInflater
-) :RecyclerView.Adapter<Adapter.ViewHolder>( ){
+) :RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>( ){
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
-        val name2 :TextView
-        val phone_num2 : TextView
+        val name2 :TextView = TODO()
+        val phone_num2 : TextView = TODO()
+
         init {
-            name2 = itemView.findViewById()
+            name2 = itemView.findViewById(R.id.person_name)
+            phone_num2 = itemView.findViewById(R.id.dinalNum)
         }
     }
 
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ??? {
-
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    TODO()
     }
 
     override fun getItemCount(): Int {
-
+        TODO()
     }
 
-    override fun onBindViewHolder(holder: ???, position: Int) {
+
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
     }
 
