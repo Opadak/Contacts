@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             personlist.add(Person("이름","010-0000-0000"))
 
 
-        }//personlist에 넣는거
+        }//personlist에 넣는거...
 
 
 
